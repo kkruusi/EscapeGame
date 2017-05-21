@@ -1,0 +1,15 @@
+###################################
+# Ignoring Unreal Generated files #
+###################################
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+BuildingEscape/Content/StarterContent/
+##########################################
+# Ignoring visual studio generated files #
+##########################################
+*.VC.db
+*.db-shm
+*.db-wal
