@@ -14,7 +14,7 @@ class BUILDINGESCAPE_API UOpenDoor : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UOpenDoor();
-
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -22,10 +22,14 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void openDoor();
 
 private:
 	UPROPERTY(VisibleAnywhere)
 	float openAngel = 90.0f;
+
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* pressurePlate;
+
+	AActor* actorThatOpens;
 };
